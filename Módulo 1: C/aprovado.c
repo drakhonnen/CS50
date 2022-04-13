@@ -8,13 +8,13 @@ int main(void)
     {
         P1 = get_long("Qual a nota da primeira prova? ");
     }
-    while (P1 < 0);
+    while (P1 > 10);
 
     do
     {
         P2 = get_long("Qual a nota da segunda prova? ");
     }
-    while (P2 < 0);
+    while (P2 > 10);
 
     long m;
     m = ((P1 + (2*P2)) / 3);
@@ -23,10 +23,10 @@ int main(void)
 
     if (m < 6)
     {
-        printf("Reprovado\n");
+        printf("Reprovado! :(\n");
     }
     if (m >= 6)
     {
-         printf("Aprovado\n");
+         printf("Aprovado! :)\n");
     }
 }
