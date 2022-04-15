@@ -104,7 +104,7 @@ int main(void)
     }
 
     //calcula quantidade de deodoros
-    while (q >= 23)
+    while (q >= 24)
     {
         q = q - 25;
         moedas++;
