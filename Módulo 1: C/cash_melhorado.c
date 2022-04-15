@@ -189,7 +189,7 @@ int main(void)
 
     if (pedro1 > 0)
     {
-        printf("Moedas de 10 centavis devidas: %i\n", pedro1);
+        printf("Moedas de 10 centavos devidas: %i\n", pedro1);
     }
 
     if (tiradentes > 0)
