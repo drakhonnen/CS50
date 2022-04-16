@@ -5,12 +5,24 @@
 int main(void)
 {
     //pergunta o valor
-    float change;
+    float total;
     do
     {
-        change = get_float("Qual o troco devido? \n");
+        total = get_float("Qual é o valor total do(s) produtos? ");
     }
-    while (change < 0);
+    while (total < 0);
+
+    float r;
+    do
+    {
+        r = get_float("Qual o valor recebido? ");
+    }
+    while (r < total);
+
+    float change = (r - total);
+    
+    printf(" \n");
+    printf("Troco do cliente: %g\n", change);
 
     //converte os centavos
     int q = round(change * 100);
